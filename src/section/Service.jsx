@@ -1,13 +1,13 @@
 import { globalicon } from "../assets/images";
-import { serviceS } from "../constants";
+import { ps, serviceS } from "../constants";
 
 const Service = () => {
   return (
-    <section className="max-container flex justify-between">
-      <div className="s-left mr-6 w-full">
+    <section className="max-container flex justify-between max-md:flex-col">
+      <div className="s-left mr-6 w-full ">
         <div className="flex justify-between  ">
           <div className="flex flex-col  justify-between">
-            <p className="mo font-montserrat text-xl max-w-[431px] mb-11 font-semibold">
+            <p className="font-montserrat text-xl max-w-[431px] mb-11 font-semibold">
               We connect people with technology that makes life better
             </p>
             <p className="text-sm leading-7 max-w-[480px]">
@@ -28,16 +28,30 @@ const Service = () => {
             </div>
           </div>
         </div>
+        <div className="mt-32">
+          <p className="px-10 mb-12 font-semibold text-base   w-fit bg-primary text-secondary">Product Specialization</p>
+          <div className="flex flex-wrap gap-x-2 gap-y-7 justify-between">
+            {ps.map((item) => (
+              <div className="lg:w-[13%] gap-y-2 flex flex-col align-middle">
+                <img className="object-contain h-[45px]" src={item.icon} alt="" />
+                <p className="font- text-[16px]  text-center">{item.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
-      <div className="s-right min-w-[35%] ">
+      <div className="s-right min-w-[35%] max-md:mt-12 max-md:m-auto ">
         <p className="text-base font-semibold mb-5 text-center">
           Service Specialization
         </p>
-        <div className="w-full border-solid border-primary border-[1px] rounded-[90px] p-10">
+        <div className="w-full max-md:w-fit   border-solid border-primary border-[1px] rounded-[90px] p-10">
           <ul className="flex flex-col justify-center items-center">
             {serviceS.map((item, index) => (
-              <li className="f font-normal te text-sm leading-7" key={index}>
+              <li
+                className="text-center font-normal te text-sm leading-7"
+                key={index}
+              >
                 {item}
               </li>
             ))}

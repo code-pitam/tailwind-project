@@ -3,27 +3,28 @@ import Hero from "./section/Hero";
 import Service from "./section/Service";
 import Subhero from "./section/Subhero";
 
+import MoreService from "./section/MoreService";
+import Products from "./section/Products";
 const App = () => {
   return (
     <main className="relative bg-secondary text-primary">
       <section className="padding-x pt-9 pb-12 border-solid border-2  border-black">
-
-        <Hero/>
+        <Hero />
       </section>
       <section className="padding-x pt-14 pb-16   border-solid border-2  border-black">
-        <Subhero/>
+        <Subhero />
       </section>
       <section className="padding-x pt-24 pb-28   border-solid border-2  border-black">
         Slider
       </section>
       <section className="padding-x pt-24 pb-20   border-solid border-2  border-black">
-        <Service/>
+        <Service />
       </section>
-      <section className="padding-x pt-24 pb-20   border-solid border-2  border-black">
-        MoreService
+      <section className="padding-x pt-24 pb-20 bg-[#0E2154]  border-solid border-2  border-black">
+      <MoreService/>
       </section>
       <section className="padding-x pt-20 pb-16   border-solid border-2  border-black">
-        Products
+    <Products/>
       </section>
       <section className="padding-x pt-12 pb-28   border-solid border-2  border-black">
         Parters
