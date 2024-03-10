@@ -5,7 +5,7 @@ const Service = () => {
   return (
     <section className="max-container flex justify-between max-md:flex-col">
       <div className="s-left mr-6 w-full ">
-        <div className="flex justify-between  ">
+        <div className="flex justify-between max-sm:flex-col max-sm:gap-y-10 ">
           <div className="flex flex-col  justify-between">
             <p className="font-montserrat text-xl max-w-[431px] mb-11 font-semibold">
               We connect people with technology that makes life better

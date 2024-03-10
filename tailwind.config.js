@@ -13,6 +13,10 @@ export default {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
       },
+      backgroundImage: {
+        vector: "url('./src/assets/images/Frame.png')",
+        vector2: "url('./src/assets/images/Group.png')",
+      },
       colors: {
         primary: "#6BADE5",
         secondary: "#091637",

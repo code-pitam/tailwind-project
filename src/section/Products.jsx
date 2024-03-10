@@ -12,9 +12,9 @@ const Products = () => {
         competition. Our strengths go beyond being just an electronic goods
         merchant wholesaler and distributor and a few of them are listed here.
       </p>
-      <div className="flex flex-wrap justify-between mt-24 mb-10  gap-y-24">
+      <div className="flex flex-wrap max-md:justify-evenly justify-between mt-24 mb-10  gap-y-24 " >
         {products.map((item) => (
-          <div className="flex flex-col w-[280px] ">
+          <div className="flex flex-col w-[280px] max-sm:m-auto">
             <img className="w-full mb-2.5 rounded-t-md" src={item.icon} alt="" />
             <p className="w-full py-2 mb-7  font-montserrat font-semibold text-center text-base bg-primary text-secondary">{item.heading}</p>
 
